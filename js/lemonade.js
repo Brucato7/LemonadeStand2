@@ -11,6 +11,7 @@ function Lemonade(){
 	}
 	this.setPrice = function(newPrice){
 		price = newPrice;
+		return price;
 	}
 	this.setCost = function(newCost){
 		cost = newCost;
