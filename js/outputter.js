@@ -22,4 +22,10 @@ function Outputter(){
 		document.getElementById("lemonadeForm").style = "display: none";
 		document.getElementById("simulationResults").innerHTML = tableHTML;
 	}
+	this.logInfoByDay = function(array){
+		for(var i = 0; i < array.length; i++){
+			console.log("Day " + (i+1));
+			console.log(array[i]);
+		}
+	}
 }

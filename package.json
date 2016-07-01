@@ -1,0 +1,25 @@
+{
+  "name": "lemonadestand2",
+  "version": "1.0.0",
+  "description": "Lemonade Stand Project for devCodeCamp",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brucato7/LemonadeStand2.git"
+  },
+  "author": "jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brucato7/LemonadeStand2/issues"
+  },
+  "homepage": "https://github.com/Brucato7/LemonadeStand2#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  }
+}

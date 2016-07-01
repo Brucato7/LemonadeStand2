@@ -45,11 +45,12 @@ function Vendor(){
 		var price = this.lemonade.getPrice();
 		var customers = this.footTraffic.footTrafficPerDay;
 
-		lemonadeStand.weather.getForecast(days);
-		lemonadeStand.footTraffic.generateFootTraffic(customers,days);
-		lemonadeStand.sellToCustomers(lemonadeStand.footTraffic.potentialCustomers, price);
-		lemonadeStand.findLemonadesPurchased(lemonadeStand.footTraffic.customersFinalDecision);
-		lemonadeStand.calculateProfit(lemonadeStand.lemonadesPurchased, price,cost);
-		lemonadeStand.outputter.generateSimulationResultsTable(days, lemonadeStand.weather.forecast,customers,lemonadeStand.lemonadesPurchased,lemonadeStand.profitPerDay);
+		this.weather.getForecast(days);
+		this.footTraffic.generateFootTraffic(customers,days);
+		this.sellToCustomers(lemonadeStand.footTraffic.potentialCustomers, price);
+		this.findLemonadesPurchased(lemonadeStand.footTraffic.customersFinalDecision);
+		this.calculateProfit(lemonadeStand.lemonadesPurchased, price,cost);
+		this.outputter.generateSimulationResultsTable(days, lemonadeStand.weather.forecast,customers,lemonadeStand.lemonadesPurchased,lemonadeStand.profitPerDay);
+		this.outputter.logInfoByDay(lemonadeStand.footTraffic.potentialCustomers);
 	}
 }
